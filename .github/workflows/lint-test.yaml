@@ -27,9 +27,9 @@ jobs:
           version: ${{ matrix.helm }}
 
       - name: Set up Python
-        uses: actions/setup-python@v2.2.2
+        uses: actions/setup-python@v2.3.1
         with:
-          python-version: 3.10.0 # renovate: python
+          python-version: 3.10.1 # renovate: python
 
       - name: Set up chart-testing
         uses: helm/chart-testing-action@v2.1.0
@@ -72,9 +72,9 @@ jobs:
           version: v3.7.1 # renovate: helm
 
       - name: Set up Python
-        uses: actions/setup-python@v2.2.2
+        uses: actions/setup-python@v2.3.1
         with:
-          python-version: 3.10.0 # renovate: python
+          python-version: 3.10.1 # renovate: python
 
       - name: Set up chart-testing
         uses: helm/chart-testing-action@v2.1.0
@@ -112,6 +112,6 @@ jobs:
           fetch-depth: 0
 
       - name: Run Checkov
-        uses: bridgecrewio/checkov-action@v12.1002.0
+        uses: bridgecrewio/checkov-action@v12.1116.0
         with:
           config_file: checkov.yaml
